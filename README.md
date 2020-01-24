@@ -22,7 +22,7 @@ It has nothing to do with ShipStation but the aim is to be a believable demo. So
 
 ![Order Note Trigger](readme-img/1-add-note.png)
 
-Why?
+But why doesn't the initial workflow work?
 
 ## Demo #2
 
