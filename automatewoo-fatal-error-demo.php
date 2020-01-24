@@ -37,21 +37,20 @@ function load() {
  * which works sometimes and other times it does not...
  */
 function fatal_error_1() {
-	add_filter( 'woocommerce_order_actions', function ( $actions ) {
+	add_filter( 'woocommerce_order_actions', function( $actions ) {
 		$actions['automatewoo_fatal_error_demo_order_action'] = 'Sync order with ShipStation';
 
 		return $actions;
 	} );
 
-	add_action( 'woocommerce_order_action_automatewoo_fatal_error_demo_order_action', function ( $order ) {
+	add_action( 'woocommerce_order_action_automatewoo_fatal_error_demo_order_action', function( $order ) {
 		// Function doesn't exist when workflow runs, oh no!
 		my_awesome_function();
 	} );
 
 	// Load a function, only for the post edit screen
-	add_action( 'load-post.php', function () {
-		function my_awesome_function() {
-		}
+	add_action( 'load-post.php', function() {
+		function my_awesome_function() {}
 	} );
 }
 
@@ -62,8 +61,7 @@ function fatal_error_1() {
  * hooking in with too many args in the function.
  */
 function fatal_error_2() {
-	add_action( 'automatewoo/subscription/status_changed_async', function ( $too, $many, $args ) {
-	}, 5 );
+	add_action( 'automatewoo/subscription/status_changed_async', function( $too, $many, $args ) {}, 5 );
 }
 
 
