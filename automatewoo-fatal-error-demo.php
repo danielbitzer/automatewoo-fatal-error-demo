@@ -58,7 +58,8 @@ function fatal_error_1() {
 /**
  * Fatal error demo #2
  *
- * This
+ * This demo simply breaks the asnyc subscription status changed event by
+ * hooking in with too many args in the function.
  */
 function fatal_error_2() {
 	add_action( 'automatewoo/subscription/status_changed_async', function ( $too, $many, $args ) {
