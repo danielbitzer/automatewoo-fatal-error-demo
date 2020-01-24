@@ -8,19 +8,19 @@ It has nothing to do with ShipStation but the aim is to be a believable demo. So
 
 1. This order action can be triggered successfully by the edit order view.
 
-![Order edit view](readme-img/1-order-actions.png); 
+![Order edit view](readme-img/1-order-actions.png)
 
 2. But for some reason, this workflow doesn't work.
 
-![Example workflow](readme-img/1-workflow-not-working.png);
+![Example workflow](readme-img/1-workflow-not-working.png)
 
 3. Lets change the trigger to the **Order Note Added** to test this manually.
   
-![Order Note Trigger](readme-img/1-order-note-test.png);
+![Order Note Trigger](readme-img/1-order-note-test.png)
 
 4. That works ok.
 
-![Order Note Trigger](readme-img/1-add-note.png);
+![Order Note Trigger](readme-img/1-add-note.png)
 
 Why?
 
